@@ -10,3 +10,5 @@ codes.forEach((code, index) => {
 		}
 	});
 });
+
+codes[0].focus();
