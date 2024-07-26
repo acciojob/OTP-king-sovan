@@ -1,7 +1,7 @@
 const codes = document.querySelectorAll('.code');
 
 codes.forEach((code, index) => {
-	code.addEventListner('keydown', (e) => {
+	code.addEventListener('keydown', (e) => {
 		if (e.key >= 0 && e.key <= 9) {
 			codes[index].value = '';
 			setTimeout(() => codes[index + 1]?.focus(), 10);
